@@ -21,10 +21,10 @@ import (
 	"math/bits"
 	"runtime"
 
-	"github.com/jparr721/krania-gnark-crypto/ecc"
-	"github.com/jparr721/krania-gnark-crypto/internal/parallel"
+	"github.com/consensys/gnark-crypto/ecc"
+	"github.com/consensys/gnark-crypto/internal/parallel"
 
-	"github.com/jparr721/krania-gnark-crypto/ecc/bn254/fr"
+	"github.com/consensys/gnark-crypto/ecc/bn254/fr"
 )
 
 // Decimation is used in the FFT call to select decimation in time or in frequency

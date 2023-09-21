@@ -4,8 +4,8 @@ import (
 	"math"
 	"math/big"
 
-	"github.com/jparr721/krania-gnark-crypto/ecc"
-	"github.com/jparr721/krania-gnark-crypto/ecc/bls12-381/fr"
+	"github.com/consensys/gnark-crypto/ecc"
+	"github.com/consensys/gnark-crypto/ecc/bls12-381/fr"
 )
 
 // phi endomorphism sqrt(-2) \in O(-8)

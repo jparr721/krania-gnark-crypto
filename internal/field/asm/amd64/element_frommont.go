@@ -32,7 +32,7 @@ func (f *FFAmd64) generateFromMont(forceADX bool) {
 	if f.NbWords <= 5 {
 		// when dynamic linking, R15 is clobbered by a global variable access
 		// this is a temporary workaround --> don't use R15 when we can avoid it.
-		// see https://github.com/jparr721/krania-gnark-crypto/issues/113
+		// see https://github.com/ConsenSys/gnark-crypto/issues/113
 		reserved = append(reserved, amd64.R15)
 	}
 	registers := f.FnHeader("fromMont", stackSize, argSize, reserved...)
@@ -44,7 +44,7 @@ func (f *FFAmd64) generateFromMont(forceADX bool) {
 	f.WriteLn(`
 	// the algorithm is described here
 	// https://hackmd.io/@gnark/modular_multiplication
-	// when y = 1 we have:
+	// when y = 1 we have: 
 	// for i=0 to N-1
 	// 		t[i] = x[i]
 	// for i=0 to N-1

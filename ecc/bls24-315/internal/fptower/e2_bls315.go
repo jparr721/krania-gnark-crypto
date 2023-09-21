@@ -15,7 +15,7 @@
 package fptower
 
 import (
-	"github.com/jparr721/krania-gnark-crypto/ecc/bls24-315/fp"
+	"github.com/consensys/gnark-crypto/ecc/bls24-315/fp"
 )
 
 // used with !amd64, make staticcheck happier.

@@ -17,15 +17,14 @@
 // Generated code is optimized for x86 (amd64) targets, and most methods do not allocate memory on the heap.
 //
 // Example usage:
+//		goff -m 0xffffffff00000001 -o ./goldilocks/ -p goldilocks -e Element
 //
-//	goff -m 0xffffffff00000001 -o ./goldilocks/ -p goldilocks -e Element
-//
-// # Warning
+// Warning
 //
 // The generated code has not been audited for all moduli (only bn254 and bls12-381) and is provided as-is. In particular, there is no security guarantees such as constant time implementation or side-channel attack resistance.
 package main
 
-import "github.com/jparr721/krania-gnark-crypto/field/goff/cmd"
+import "github.com/consensys/gnark-crypto/field/goff/cmd"
 
 func main() {
 	cmd.Execute()

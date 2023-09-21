@@ -14,7 +14,7 @@
 
 package fptower
 
-import "github.com/jparr721/krania-gnark-crypto/ecc/bw6-756/fp"
+import "github.com/consensys/gnark-crypto/ecc/bw6-756/fp"
 
 var _frobA = fp.Element{
 	4513305906938863657,

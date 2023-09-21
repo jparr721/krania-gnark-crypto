@@ -15,7 +15,7 @@
 package fptower
 
 import (
-	"github.com/jparr721/krania-gnark-crypto/ecc/bls24-315/fp"
+	"github.com/consensys/gnark-crypto/ecc/bls24-315/fp"
 )
 
 // Frobenius sets z in E4 to x^q, returns z

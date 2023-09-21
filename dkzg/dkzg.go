@@ -6,9 +6,9 @@ package dkzg
 import (
 	"io"
 
-	"github.com/jparr721/krania-gnark-crypto/ecc"
+	"github.com/consensys/gnark-crypto/ecc"
 
-	dkzg_bn254 "github.com/jparr721/krania-gnark-crypto/ecc/bn254/fr/dkzg"
+	dkzg_bn254 "github.com/consensys/gnark-crypto/ecc/bn254/fr/dkzg"
 )
 
 // SRS ...

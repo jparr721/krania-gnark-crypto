@@ -1,7 +1,7 @@
 package fptower
 
 import (
-	"github.com/jparr721/krania-gnark-crypto/ecc/bn254/fp"
+	"github.com/consensys/gnark-crypto/ecc/bn254/fp"
 	"github.com/leanovate/gopter"
 )
 

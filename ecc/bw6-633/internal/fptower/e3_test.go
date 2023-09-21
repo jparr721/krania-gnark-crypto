@@ -3,7 +3,7 @@ package fptower
 import (
 	"testing"
 
-	"github.com/jparr721/krania-gnark-crypto/ecc/bw6-633/fp"
+	"github.com/consensys/gnark-crypto/ecc/bw6-633/fp"
 	"github.com/leanovate/gopter"
 	"github.com/leanovate/gopter/prop"
 )

@@ -4,7 +4,7 @@ import (
 	"encoding/binary"
 	"io"
 
-	"github.com/jparr721/krania-gnark-crypto/ecc/bn254"
+	"github.com/consensys/gnark-crypto/ecc/bn254"
 )
 
 func uint64ArrayToBytes(a []uint64) []byte {

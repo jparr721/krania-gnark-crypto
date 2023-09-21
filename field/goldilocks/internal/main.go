@@ -3,8 +3,8 @@ package main
 import (
 	"fmt"
 
-	"github.com/jparr721/krania-gnark-crypto/internal/field"
-	"github.com/jparr721/krania-gnark-crypto/internal/field/generator"
+	"github.com/consensys/gnark-crypto/internal/field"
+	"github.com/consensys/gnark-crypto/internal/field/generator"
 )
 
 //go:generate go run main.go

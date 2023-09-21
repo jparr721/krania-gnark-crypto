@@ -3,7 +3,7 @@ package bls12381
 import (
 	"testing"
 
-	"github.com/jparr721/krania-gnark-crypto/ecc/bls12-381/fp"
+	"github.com/consensys/gnark-crypto/ecc/bls12-381/fp"
 )
 
 func TestG1IsogenyVectors(t *testing.T) {

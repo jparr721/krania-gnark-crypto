@@ -17,8 +17,8 @@ package bw6633
 import (
 	"errors"
 
-	"github.com/jparr721/krania-gnark-crypto/ecc/bw6-633/fp"
-	"github.com/jparr721/krania-gnark-crypto/ecc/bw6-633/internal/fptower"
+	"github.com/consensys/gnark-crypto/ecc/bw6-633/fp"
+	"github.com/consensys/gnark-crypto/ecc/bw6-633/internal/fptower"
 )
 
 // GT target group of the pairing

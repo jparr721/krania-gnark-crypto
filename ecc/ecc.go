@@ -18,19 +18,19 @@ limitations under the License.
 //
 // Also
 //
-//   - Multi exponentiation
-//   - FFT
-//   - Polynomial commitment schemes
-//   - MiMC
-//   - twisted edwards "companion curves"
-//   - EdDSA (on the "companion" twisted edwards curves)
+//	* Multi exponentiation
+//	* FFT
+//	* Polynomial commitment schemes
+//	* MiMC
+//	* twisted edwards "companion curves"
+//	* EdDSA (on the "companion" twisted edwards curves)
 package ecc
 
 import (
 	"math/big"
 	"strings"
 
-	"github.com/jparr721/krania-gnark-crypto/internal/generator/config"
+	"github.com/consensys/gnark-crypto/internal/generator/config"
 )
 
 // ID represent a unique ID for a curve

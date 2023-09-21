@@ -1,9 +1,8 @@
 package config
 
 import (
+	"github.com/consensys/gnark-crypto/internal/field"
 	"math/big"
-
-	"github.com/jparr721/krania-gnark-crypto/internal/field"
 )
 
 type FieldElementToCurvePoint string

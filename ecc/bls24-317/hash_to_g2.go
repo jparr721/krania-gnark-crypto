@@ -15,8 +15,8 @@
 package bls24317
 
 import (
-	"github.com/jparr721/krania-gnark-crypto/ecc/bls24-317/fp"
-	"github.com/jparr721/krania-gnark-crypto/ecc/bls24-317/internal/fptower"
+	"github.com/consensys/gnark-crypto/ecc/bls24-317/fp"
+	"github.com/consensys/gnark-crypto/ecc/bls24-317/internal/fptower"
 )
 
 // https://tools.ietf.org/html/draft-irtf-cfrg-hash-to-curve-06#section-4.1

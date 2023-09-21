@@ -8,21 +8,21 @@ import (
 	"sync"
 
 	"github.com/consensys/bavard"
-	"github.com/jparr721/krania-gnark-crypto/internal/field"
-	"github.com/jparr721/krania-gnark-crypto/internal/field/generator"
-	"github.com/jparr721/krania-gnark-crypto/internal/generator/config"
-	"github.com/jparr721/krania-gnark-crypto/internal/generator/crypto/hash/mimc"
-	"github.com/jparr721/krania-gnark-crypto/internal/generator/ecc"
-	"github.com/jparr721/krania-gnark-crypto/internal/generator/edwards"
-	"github.com/jparr721/krania-gnark-crypto/internal/generator/edwards/eddsa"
-	"github.com/jparr721/krania-gnark-crypto/internal/generator/fft"
-	fri "github.com/jparr721/krania-gnark-crypto/internal/generator/fri/template"
-	"github.com/jparr721/krania-gnark-crypto/internal/generator/kzg"
-	"github.com/jparr721/krania-gnark-crypto/internal/generator/pairing"
-	"github.com/jparr721/krania-gnark-crypto/internal/generator/permutation"
-	"github.com/jparr721/krania-gnark-crypto/internal/generator/plookup"
-	"github.com/jparr721/krania-gnark-crypto/internal/generator/polynomial"
-	"github.com/jparr721/krania-gnark-crypto/internal/generator/tower"
+	"github.com/consensys/gnark-crypto/internal/field"
+	"github.com/consensys/gnark-crypto/internal/field/generator"
+	"github.com/consensys/gnark-crypto/internal/generator/config"
+	"github.com/consensys/gnark-crypto/internal/generator/crypto/hash/mimc"
+	"github.com/consensys/gnark-crypto/internal/generator/ecc"
+	"github.com/consensys/gnark-crypto/internal/generator/edwards"
+	"github.com/consensys/gnark-crypto/internal/generator/edwards/eddsa"
+	"github.com/consensys/gnark-crypto/internal/generator/fft"
+	fri "github.com/consensys/gnark-crypto/internal/generator/fri/template"
+	"github.com/consensys/gnark-crypto/internal/generator/kzg"
+	"github.com/consensys/gnark-crypto/internal/generator/pairing"
+	"github.com/consensys/gnark-crypto/internal/generator/permutation"
+	"github.com/consensys/gnark-crypto/internal/generator/plookup"
+	"github.com/consensys/gnark-crypto/internal/generator/polynomial"
+	"github.com/consensys/gnark-crypto/internal/generator/tower"
 )
 
 const (
@@ -31,7 +31,7 @@ const (
 	baseDir         = "../../"
 )
 
-var bgen = bavard.NewBatchGenerator(copyrightHolder, copyrightYear, "jparr721/krania-gnark-crypto")
+var bgen = bavard.NewBatchGenerator(copyrightHolder, copyrightYear, "consensys/gnark-crypto")
 
 //go:generate go run main.go
 func main() {

@@ -10,10 +10,10 @@ import (
 	"text/template"
 
 	"github.com/consensys/bavard"
-	"github.com/jparr721/krania-gnark-crypto/internal/field"
-	"github.com/jparr721/krania-gnark-crypto/internal/field/asm/amd64"
-	"github.com/jparr721/krania-gnark-crypto/internal/field/internal/addchain"
-	"github.com/jparr721/krania-gnark-crypto/internal/field/internal/templates/element"
+	"github.com/consensys/gnark-crypto/internal/field"
+	"github.com/consensys/gnark-crypto/internal/field/asm/amd64"
+	"github.com/consensys/gnark-crypto/internal/field/internal/addchain"
+	"github.com/consensys/gnark-crypto/internal/field/internal/templates/element"
 )
 
 // TODO @gbotrel → pattern for code generation is different than gnark-crypto/internal because a binary like goff can generate
@@ -23,8 +23,8 @@ import (
 //
 // Example usage
 //
-//	fp, _ = field.NewField("fp", "Element", fpModulus")
-//	generator.GenerateFF(fp, filepath.Join(baseDir, "fp"))
+// 	fp, _ = field.NewField("fp", "Element", fpModulus")
+// 	generator.GenerateFF(fp, filepath.Join(baseDir, "fp"))
 func GenerateFF(F *field.FieldConfig, outputDir string) error {
 	// source file templates
 	sourceFiles := []string{
@@ -83,7 +83,7 @@ func GenerateFF(F *field.FieldConfig, outputDir string) error {
 	bavardOpts := []func(*bavard.Bavard) error{
 		bavard.Apache2("ConsenSys Software Inc.", 2020),
 		bavard.Package(F.PackageName),
-		bavard.GeneratedBy("jparr721/krania-gnark-crypto"),
+		bavard.GeneratedBy("consensys/gnark-crypto"),
 		bavard.Funcs(funcs),
 	}
 

@@ -14,7 +14,7 @@
 
 package fptower
 
-import "github.com/jparr721/krania-gnark-crypto/ecc/bls24-317/fp"
+import "github.com/consensys/gnark-crypto/ecc/bls24-317/fp"
 
 // Mul sets z to the E2-product of x,y, returns z
 func (z *E2) Mul(x, y *E2) *E2 {

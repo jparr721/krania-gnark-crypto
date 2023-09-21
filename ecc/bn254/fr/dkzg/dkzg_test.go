@@ -22,10 +22,10 @@ import (
 	"reflect"
 	"testing"
 
-	"github.com/jparr721/goMPI/mpi"
-	"github.com/jparr721/krania-gnark-crypto/ecc"
-	"github.com/jparr721/krania-gnark-crypto/ecc/bn254"
-	"github.com/jparr721/krania-gnark-crypto/ecc/bn254/fr"
+	"github.com/consensys/gnark-crypto/ecc"
+	"github.com/consensys/gnark-crypto/ecc/bn254"
+	"github.com/consensys/gnark-crypto/ecc/bn254/fr"
+	"github.com/sunblaze-ucb/simpleMPI/mpi"
 )
 
 // testSRS re-used accross tests of the KZG scheme

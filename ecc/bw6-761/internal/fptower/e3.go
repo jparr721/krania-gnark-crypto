@@ -13,7 +13,7 @@
 package fptower
 
 import (
-	"github.com/jparr721/krania-gnark-crypto/ecc/bw6-761/fp"
+	"github.com/consensys/gnark-crypto/ecc/bw6-761/fp"
 )
 
 // E3 is a degree-three finite field extension of fp3

@@ -17,8 +17,8 @@ package fptower
 import (
 	"math/big"
 
-	"github.com/jparr721/krania-gnark-crypto/ecc"
-	"github.com/jparr721/krania-gnark-crypto/ecc/bls24-315/fr"
+	"github.com/consensys/gnark-crypto/ecc"
+	"github.com/consensys/gnark-crypto/ecc/bls24-315/fr"
 )
 
 // generator of the curve

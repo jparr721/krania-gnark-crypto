@@ -19,12 +19,12 @@ import (
 	"hash"
 	"math/big"
 
-	"github.com/jparr721/goMPI/mpi"
-	"github.com/jparr721/krania-gnark-crypto/ecc"
-	"github.com/jparr721/krania-gnark-crypto/ecc/bn254"
-	"github.com/jparr721/krania-gnark-crypto/ecc/bn254/fr"
-	fiatshamir "github.com/jparr721/krania-gnark-crypto/fiat-shamir"
-	"github.com/jparr721/krania-gnark-crypto/internal/parallel"
+	"github.com/consensys/gnark-crypto/ecc"
+	"github.com/consensys/gnark-crypto/ecc/bn254"
+	"github.com/consensys/gnark-crypto/ecc/bn254/fr"
+	fiatshamir "github.com/consensys/gnark-crypto/fiat-shamir"
+	"github.com/consensys/gnark-crypto/internal/parallel"
+	"github.com/sunblaze-ucb/simpleMPI/mpi"
 )
 
 var (
@@ -55,12 +55,9 @@ func eval(p []fr.Element, point fr.Element) fr.Element {
 	return res
 }
 
-// func init() {
-// wd, _ := os.Getwd()
-// fmt.Println("WD", wd)
-
-// mpi.WorldInit("/Users/jarredparr/Documents/Projects/zkp.nosync/pianist-gnark/examples/piano/ip.json", "/Users/jarredparr/Documents/Projects/zkp.nosync/pianist-gnark/examples/piano/config.json")
-// }
+func init() {
+	mpi.WorldInit("/root/-gnark/ip.txt", "/root/.ssh/id_rsa", "root")
+}
 
 func lagrangeCalc(t uint64, tau0 fr.Element, omega *fr.Element) fr.Element {
 	m := big.NewInt(int64(mpi.WorldSize))
