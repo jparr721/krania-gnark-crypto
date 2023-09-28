@@ -56,7 +56,7 @@ func eval(p []fr.Element, point fr.Element) fr.Element {
 }
 
 func init() {
-	mpi.WorldInit("/root/-gnark/ip.txt", "/root/.ssh/id_rsa", "root")
+	mpi.WorldInit("/root/krania-gnark/ip.txt", "/root/.ssh/id_rsa", "root")
 }
 
 func lagrangeCalc(t uint64, tau0 fr.Element, omega *fr.Element) fr.Element {
