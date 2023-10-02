@@ -24,7 +24,7 @@ import (
 	"github.com/consensys/gnark-crypto/ecc/bn254/fr"
 	fiatshamir "github.com/consensys/gnark-crypto/fiat-shamir"
 	"github.com/consensys/gnark-crypto/internal/parallel"
-	"github.com/sunblaze-ucb/simpleMPI/mpi"
+	"github.com/jparr721/goMPI/mpi"
 )
 
 var (

@@ -25,7 +25,7 @@ import (
 	"github.com/consensys/gnark-crypto/ecc"
 	"github.com/consensys/gnark-crypto/ecc/bn254"
 	"github.com/consensys/gnark-crypto/ecc/bn254/fr"
-	"github.com/sunblaze-ucb/simpleMPI/mpi"
+	"github.com/jparr721/goMPI/mpi"
 )
 
 // testSRS re-used accross tests of the KZG scheme
