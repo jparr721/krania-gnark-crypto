@@ -55,10 +55,6 @@ func eval(p []fr.Element, point fr.Element) fr.Element {
 	return res
 }
 
-func init() {
-	mpi.WorldInit("/root/krania-gnark/ip.txt", "/root/.ssh/id_rsa", "root")
-}
-
 func lagrangeCalc(t uint64, tau0 fr.Element, omega *fr.Element) fr.Element {
 	m := big.NewInt(int64(mpi.WorldSize))
 	mField := new(fr.Element).SetBigInt(m)
